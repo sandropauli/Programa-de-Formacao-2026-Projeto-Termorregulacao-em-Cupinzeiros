@@ -1,0 +1,41 @@
+METADATA - CATEGORIZATION OF TERMITE DATA,,,,,,
+General descriptation: This worksheet contains information on termite morphology and habitat; as well as geographic localization and temperature across Cerrado vegetation types. Each row represents a sampled termite. ,,,,,,
+Variable,Description ,Unity,Data type,Category vs. possible valeus,Exemple,Observations
+X,Sequential number of the spreadsheet,–,Integer,"1, 2, 3...",1,Unique row identifier
+date,Sampling date,dd/mm/yyyy,Date,–,13/07/2026,Date on which the mound was sampled
+sampling_day,Day of the month on which sampling occurred,day,Integer,1–31,13,Day of sampling
+mound_id,Termite mound identification code,–,Character,"e.g. 1CA, 2MA",1CA,Unique mound identifier combining mound number and vegetation type
+vegetation_type,Vegetation type where the termite mound was sampled,–,Character,Campo_aberto / Mata,Campo_aberto,Cerrado vegetation type
+mound_height_cm,Maximum height of the termite mound,cm,Numeric,> 0,58,Maximum mound height measured in the field
+maj_diameter_cm,Major diameter of the termite mound,cm,Numeric,> 0,101,Largest diameter measured
+min_diameter_cm,Minor diameter of the termite mound,cm,Numeric,> 0,77,Smallest diameter measured
+canopy_cover,Proportion of canopy cover at the sampling location,%,Numeric,0–100,0,Visual estimate of canopy cover
+understory_cover,Proportion of understory vegetation cover at the sampling location,%,Numeric,0–100,0,Visual estimate of understory cover
+mound_volume,Estimated volume of the termite mound,cm³,Numeric,> 0,236177.61,Calculated from mound height and major/minor diameters
+Arquive,Name of the temperature data file associated with the mound,–,Character,File name,cut_0713_P1_1CA_T1.csv,Original sensor data file
+Point,Identification of the sampling point,–,Character,"P1, P2, P3...",P1,Collection point
+Envriomnent_type,Broad environmental category,–,Character,Campo / Mata,Campo,Environmental classification
+ID_Completo,Complete identification code combining sampling point and mound,–,Character,e.g. P1_1CA,P1_1CA,Unique identifier for the mound within the sampling point
+Data,Date associated with the temperature record,yyyy-mm-dd,Date,–,2026-07-13,Date extracted from the temperature record
+THERMAL VARIABLES -T1,,,,,,
+Variable,Description,Unity,Data type,Category vs. possible valeus,Exemple,Observation
+Tempo_Pico_T1,Time at which the maximum temperature was reached inside the termite mound,datetime,Date-time,–,2026-07-13T12:46:37Z,Peak temperature time recorded by sensor T1
+Temp_Max_T1,Maximum temperature recorded inside the termite mound,°C,Numeric,–,41.2,Highest temperature recorded by T1
+Amp_T1,Thermal amplitude inside the termite mound,°C,Numeric,≥ 0,26.4,Difference between maximum and minimum temperature recorded by T1
+Variáveis térmicas — T2,,,,,,
+,,,,,,
+THERMAL VARIABLES - T2,,,,,,
+Variable,Description,Unity,Data type,Category vs. possible valeus,Exemple,Observation
+Tempo_Pico_T2,Time at which the maximum environmental temperature was reached,datetime,Date-time,–,2026-07-13T17:09:40Z,Peak temperature time recorded by sensor T2
+Temp_Max_T2,Maximum environmental temperature recorded,°C,Numeric,–,23.5,Highest temperature recorded by T2
+Amp_T2,Environmental thermal amplitude,°C,Numeric,≥ 0,3.5,Difference between maximum and minimum environmental temperature
+Tempo_Pico_T2,Time at which the maximum environmental temperature was reached,datetime,Date-time,–,2026-07-13T17:09:40Z,Peak temperature time recorded by sensor T2
+Temp_Max_T2,Maximum environmental temperature recorded,°C,Numeric,–,23.5,Highest temperature recorded by T2
+Amp_T2,Environmental thermal amplitude,°C,Numeric,≥ 0,3.5,Difference between maximum and minimum environmental temperature
+,,,,,,
+THERMAL RESPONSE VARIABLES OF THE TERMITE MOUND,,,,,,
+Variable ,Description,Unity,Data type,Categories,Exemple,Observation
+Atraso_Minutos,Time difference between the environmental temperature peak and the termite mound temperature peak,minutes,Numeric,≥ 0,263.05,Temporal lag between T2 and T1 temperature peaks
+Razao_Amortecimento,Ratio between thermal amplitude inside the mound and environmental thermal amplitude,dimensionless,Numeric,≥ 0,1.326,Quantifies the relationship between thermal amplitudes of T1 and T2
+Modulo_Delta_T_Pico,Absolute difference between maximum temperature inside the mound and maximum environmental temperature,°C,Numeric,≥ 0,17.7,Absolute thermal difference at the temperature peaks
+Modulo_Delta_T_Medio,Absolute difference between the mean temperature inside the mound and the mean environmental temperature,°C,Numeric,≥ 0,,
